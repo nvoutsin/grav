@@ -7,14 +7,13 @@ folders:
   - config
   - data
 sync:
-  on_save: true
-  on_delete: true
-  on_media: true
+  on_save: false
+  on_delete: false
+  on_media: false
   cron_enable: false
-  cron_at: '0 12,23 * * *'
+  cron_at: '0 0 1 1 *'
 repository: 'https://github.com/nvoutsin/grav'
 user: nvoutsin
-password: gitsync-def5020032c67a214827bfec9c38e8517b087eff2b9110e8fe011b84be8ddb4b8e6d92e09b7342f9a9173a6293cfd8fb1865ed8d837ca4adb460a15a8dc1fd59a7b79ed0fe0a176299a0fae8dde4700c02a3fdec54fc4cbe6d71a7e0
 webhook: /_git-sync-5434551e9a45
 webhook_enabled: '0'
 webhook_secret: 2ce953fd298c86ebe9cfc8c0a4f06436327c13c5cbecb295
@@ -29,3 +28,4 @@ git:
   email: git-sync@trilby.media
   bin: git
 logging: false
+password: gitsync-def5020032c67a214827bfec9c38e8517b087eff2b9110e8fe011b84be8ddb4b8e6d92e09b7342f9a9173a6293cfd8fb1865ed8d837ca4adb460a15a8dc1fd59a7b79ed0fe0a176299a0fae8dde4700c02a3fdec54fc4cbe6d71a7e0
